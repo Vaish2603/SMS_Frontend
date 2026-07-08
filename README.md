@@ -46,18 +46,20 @@ git branch -M main
 git push -u origin main
 
 
-1. Pushing Local Changes to GitHub
+# 1. Pushing Local Changes to GitHub -->
 When you add features or fix a route, save and upload your progress:
-- >> git status
-- >> git add .
-- >> git commit -m "add commits"
-- >> git push origin main
 
-2. Pulling Remote Modifications
+git status
+git add .
+git commit -m "add commits"
+git push origin main
+
+# 2. Pulling Remote Modifications
 Always pull the latest changes before starting a new coding session to stay in sync with the repository:
-- >> git pull origin main
 
-3. Resolving Merge Conflicts
+git pull origin main
+
+# 3. Resolving Merge Conflicts
 - If you and a collaborator edit the same file row, Git will mark a merge conflict.
 - Open the file in VS Code.
 - Locate the conflict markers (<<<<<<< HEAD, =======, >>>>>>>).
@@ -65,6 +67,6 @@ Always pull the latest changes before starting a new coding session to stay in s
 - Save the file and clear the conflict status:
 
 
-- >> git add <resolved_file_path>
-- >> git commit -m "fix: resolved merge routing conflict parameters"
-- >> git push origin main
+git add <resolved_file_path>
+git commit -m "fix: resolved merge routing conflict parameters"
+git push origin main
