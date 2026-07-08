@@ -1,0 +1,256 @@
+.leave-container {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: sans-serif;
+}
+
+.directory-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .directory-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.directory-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.btn-action {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.btn-add { background-color: #4f46e5; }
+.btn-add:hover { background-color: #4338ca; }
+.btn-close { background-color: #475569; }
+.btn-close:hover { background-color: #334155; }
+
+.leave-form-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+@media (min-width: 768px) {
+    .leave-form-card {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .form-header, .form-actions {
+        grid-column: span 3 / span 3;
+    }
+}
+
+.form-header h2 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #334155;
+    margin: 0;
+}
+
+.form-header {
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 0.25rem;
+}
+
+.form-group input, .form-select, .form-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    color: #334155;
+    background-color: #ffffff;
+}
+
+.form-group input:focus, .form-select:focus, .form-group textarea:focus {
+    outline: 2px solid #6366f1;
+    outline-offset: -1px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.btn-cancel {
+    padding: 0.5rem 1rem;
+    background-color: #e2e8f0;
+    color: #334155;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.btn-cancel:hover { background-color: #cbd5e1; }
+
+.btn-submit {
+    padding: 0.5rem 1.5rem;
+    color: #ffffff;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.bg-success { background-color: #059669; }
+.bg-success:hover { background-color: #047857; }
+
+.table-card {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.search-bar-container {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    background-color: #f8fafc;
+}
+
+.search-icon { color: #94a3b8; margin-right: 0.5rem; }
+.search-bar-container input {
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.875rem;
+    color: #334155;
+}
+
+.table-wrapper { overflow-x: auto; }
+.leave-table {
+    width: 100%;
+    text-align: left;
+    font-size: 0.875rem;
+    border-collapse: collapse;
+}
+
+.leave-table th {
+    background-color: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1rem;
+    color: #475569;
+    font-weight: 500;
+}
+
+.leave-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #f1f5f9;
+    color: #334155;
+    vertical-align: middle;
+}
+
+.leave-table tr:hover { background-color: #f8fafc; }
+
+.font-mono { font-family: monospace; }
+.text-bold { font-weight: 600; color: #0f172a; }
+.text-sub-dept { font-size: 0.75rem; color: #64748b; font-weight: 400; margin-top: 0.15rem; }
+.text-date-span { font-size: 0.8rem; color: #334155; font-weight: 500; line-height: 1.2; }
+.text-to-span { font-size: 0.7rem; color: #94a3b8; text-transform: uppercase; font-weight: 700; margin: 0.1rem 0; }
+.reason-cell-text { max-width: 24rem; color: #475569; line-height: 1.4; word-wrap: break-word; }
+
+.badge-status {
+    padding: 0.25rem 0.6rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.status-pending { background-color: #fef3c7; color: #d97706; }
+.status-approved { background-color: #d1fae5; color: #059669; }
+.status-rejected { background-color: #fee2e2; color: #dc2626; }
+
+.table-empty {
+    padding: 2rem;
+    text-align: center;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.action-cell-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.action-cell-buttons button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.action-approve { background-color: #e6f4ea; color: #137333; }
+.action-approve:hover { background-color: #d2e3d6; }
+.action-reject { background-color: #fce8e6; color: #c5221f; }
+.action-reject:hover { background-color: #fad2cf; }
+.action-delete { background-color: #f1f5f9; color: #64748b; }
+.action-delete:hover { background-color: #e2e8f0; color: #0f172a; }
+
+.pagination-footer {
+    padding: 1rem;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8fafc;
+}
+
+.page-indicator { font-size: 0.75rem; color: #64748b; }
+.pagination-controls { display: flex; gap: 0.25rem; }
+.pagination-controls button {
+    padding: 0.5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.pagination-controls button:hover:not(:disabled) { background-color: #f1f5f9; }
+.pagination-controls button:disabled { opacity: 0.5; cursor: not-allowed; }
